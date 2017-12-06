@@ -4,13 +4,13 @@ import "fmt"
 
 func testbuffer() {
 
-	c := make(chan int, 3);
+	c := make(chan int, 3)
 	for i := 1; i < 5; i++ {
 		go w2c(c)
 	}
 
-	for i:=range  c{
-		fmt.Println("receivced value ",i)
+	for i := range c {
+		fmt.Println("receivced value ", i)
 	}
 
 }
@@ -30,7 +30,6 @@ func w2c(c chan int) {
 	}
 
 }
-
 
 func main() {
 	testbuffer()

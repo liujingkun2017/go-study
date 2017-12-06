@@ -2,10 +2,10 @@ package main
 
 import (
 	"config"
-	"fmt"
 	d1 "demo1"
 	d2 "demo2"
 	d3 "demo3"
+	"fmt"
 )
 
 type Integer int
@@ -53,7 +53,7 @@ func main() {
 		chs[i] = make(chan int)
 		go d3.Count(chs[i])
 	}
-	for _, ch := range (chs) {
+	for _, ch := range chs {
 		x := <-ch
 		fmt.Println("x=", x)
 	}

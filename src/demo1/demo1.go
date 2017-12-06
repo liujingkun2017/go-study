@@ -1,6 +1,5 @@
 package demo1
 
-
 func less1() {
 
 }
