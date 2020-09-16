@@ -11,7 +11,7 @@ export GOPATH="$CURDIR"
 
 gofmt -w src
 
-go install demo4
+go install demo5
 
 export GOPATH="$OLDGOPATH"
 

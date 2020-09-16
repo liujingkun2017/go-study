@@ -3,11 +3,11 @@ package main
 //tcp
 
 import (
-	"net"
-	"os"
 	"bytes"
 	"fmt"
 	"io"
+	"net"
+	"os"
 )
 
 func main() {

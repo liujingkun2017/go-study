@@ -1,6 +1,5 @@
 package main
 
-
 //ICMP
 import (
 	"bytes"
